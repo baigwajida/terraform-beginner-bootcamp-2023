@@ -25,7 +25,7 @@ In terraform we can set two kinds of variables:
 - Environment Variables - those you would set in your bash terminal eg. AWS credentials
 - Terraform Variables - those that you would normally set in your tfvars file
 
-We can set Terraform Cloud variables to be sensitive so they are not shown visibility in the UI.
+We can set Terraform Cloud variables to be sensitive so they are not shown visibily in the UI.
 
 ### Loading Terraform Input Variables
 
