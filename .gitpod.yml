@@ -5,21 +5,21 @@ tasks:
       source ./bin/install_terraform_cli
       source ./bin/generate_tfrc_credentials
       cp $PROJECT_ROOT/terraform.tfvars.example $PROJECT_ROOT/terraform.tfvars
-    #  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
-    #  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-    #  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" -y
-    #  sudo apt-get update && sudo apt-get install terraform
+#  sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+#  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+#  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" -y
+#  sudo apt-get update && sudo apt-get install terraform
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
     before: |
       source ./bin/set_tf_alias
       source ./bin/install_aws_cli
-    #  cd /workspace
-    #  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-    #  unzip awscliv2.zip
-    #  sudo ./aws/install
-    #  cd $THEIA_WORKSPACE_ROOT
+#  cd /workspace
+#  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+#  unzip awscliv2.zip
+#  sudo ./aws/install
+#  cd $THEIA_WORKSPACE_ROOT
   - name: http-server
     before: |
       npm install --global http-server
@@ -29,3 +29,4 @@ vscode:
   extensions:
     - amazonwebservices.aws-toolkit-vscode
     - hashicorp.terraform
+    - phil294.git-log--graph
