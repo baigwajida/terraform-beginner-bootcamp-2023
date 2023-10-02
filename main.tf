@@ -8,7 +8,7 @@ terraform {
   #  }
   #}
   #cloud {
-  #  organization = "ExamPro"
+  #  organization = "WGS"
   #  workspaces {
   #    name = "terra-house-1"
   #  }
