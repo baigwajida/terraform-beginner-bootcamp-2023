@@ -2,7 +2,16 @@ terraform {
   #backend "remote" {
   #  hostname = "app.terraform.io"
   #  organization = "WGS"
-
+  #  workspaces {
+  #    name = "terra-house-1"
+  #  }
+  #}
+  #cloud {
+  #  organization = "WGS"
+  #  workspaces {
+  #    name = "terra-house-1"
+  #  }
+  #}
   #  workspaces {
   #    name = "terra-house-1"
   #  }
@@ -25,3 +34,8 @@ module "terrahouse_aws" {
   content_version = var.content_version
 }
 
+module "terrahouse_aws" {
+  source = "./modules/terrahouse_aws"
+  user_uuid = var.user_uuid
+  bucket_name = var.bucket_name
+}

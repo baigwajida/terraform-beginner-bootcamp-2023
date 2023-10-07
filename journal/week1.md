@@ -134,7 +134,6 @@ module "terrahouse_aws" {
 }
 ```
 
-
 [Modules Sources](https://developer.hashicorp.com/terraform/language/modules/sources)
 
 ## Considerations when using ChatGPT to write Terraform
@@ -290,4 +289,3 @@ For each allows us to enumerate over complex data types
 This is mostly useful when you are creating multiples of a cloud resource and you want to reduce the amount of repetitive terraform code.
 
 [For Each Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
-
