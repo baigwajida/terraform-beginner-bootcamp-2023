@@ -210,6 +210,9 @@ We use the jsonencode to create the json policy inline in the hcl.
 {"hello":"world"}
 ```
 
+
+[jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode)
+
 [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode)
 
 ### Changing the Lifecycle of Resources
