@@ -213,8 +213,6 @@ We use the jsonencode to create the json policy inline in the hcl.
 
 [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode)
 
-[jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode)
-
 ### Changing the Lifecycle of Resources
 
 [Meta Arguments Lifcycle](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle)
@@ -289,3 +287,4 @@ For each allows us to enumerate over complex data types
 This is mostly useful when you are creating multiples of a cloud resource and you want to reduce the amount of repetitive terraform code.
 
 [For Each Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
+
