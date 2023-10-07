@@ -134,7 +134,6 @@ module "terrahouse_aws" {
 }
 ```
 
-
 [Modules Sources](https://developer.hashicorp.com/terraform/language/modules/sources)
 
 ## Considerations when using ChatGPT to write Terraform
@@ -173,6 +172,7 @@ resource "aws_s3_object" "index_html" {
   key    = "index.html"
   source = "${path.root}/public/index.html"
 }
+}
 
 ## Terraform Locals
 
@@ -209,6 +209,7 @@ We use the jsonencode to create the json policy inline in the hcl.
 > jsonencode({"hello"="world"})
 {"hello":"world"}
 ```
+
 
 [jsonencode](https://developer.hashicorp.com/terraform/language/functions/jsonencode)
 
@@ -274,3 +275,16 @@ resource "aws_instance" "web" {
 ```
 
 [Remote-exec](https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec)
+
+## For Each Expressions
+
+For each allows us to enumerate over complex data types
+
+```sh
+[for s in var.list : upper(s)]
+```
+
+This is mostly useful when you are creating multiples of a cloud resource and you want to reduce the amount of repetitive terraform code.
+
+[For Each Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
+
