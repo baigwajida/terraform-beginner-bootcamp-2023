@@ -8,6 +8,7 @@ required_providers {
 }
 
 
+
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 resource "aws_s3_bucket" "website_bucket" {
   # Bucket Naming Rules
@@ -49,3 +50,6 @@ resource "aws_s3_object" "error_html" {
 
   etag = filemd5(var.error_html_filepath)
 }
+
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity
+data "aws_caller_identity" "current" {}
