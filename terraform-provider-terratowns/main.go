@@ -123,6 +123,7 @@ func Resource() *schema.Resource {
 				Description: "The content version of the home",
 			},
 		},
+
 	}
 	log.Print("Resource:start")
 	return resource
@@ -324,5 +325,6 @@ func resourceHouseDelete(ctx context.Context, d *schema.ResourceData, m interfac
 	d.SetId("")
 
 	log.Print("resourceHouseDelete:end")
+
 	return diags
 }
