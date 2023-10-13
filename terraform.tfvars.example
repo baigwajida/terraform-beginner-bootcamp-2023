@@ -1,5 +1,13 @@
 terratowns_endpoint="https://terratowns.cloud/api"
-index_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/index.html"
-error_html_filepath="/workspace/terraform-beginner-bootcamp-2023/public/error.html"
-assets_path="/workspace/terraform-beginner-bootcamp-2023/public/assets/"
-content_version=1
+baklava = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/baklava"
+  content_version = 1 
+}
+daffodils = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/daffodils"
+  content_version = 2
+}
+kunafah = {
+  public_path = "/workspace/terraform-beginner-bootcamp-2023/public/kunafah"
+  content_version = 1 
+}
